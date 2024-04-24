@@ -20,13 +20,12 @@
     <section id="rompecabezas">
         <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
     <div id="tarjetasGrises">
+        <div id="tarjeta" ondrop="soltarElemento(event)"  ><p>Arrastre y suelte la imagen aquí</p></div>
         <div id="tarjeta" ><p>Arrastre y suelte la imagen aquí</p></div>
-        <div id="tarjeta" ><p>Arrastre y suelte la imagen aquí</p></div>
-        <div id="tarjeta" ><p>Arrastre y suelte la imagen aquí</div>
         <div id="tarjeta" ><p>Arrastre y suelte la imagen aquí</p></div>
     </div>
     <div id="imagenes">
-        <img id="img1" src="./assets/imagenes/Rompe1.png" alt="Pieza 1 rompecabezas">
+        <img id="img1"  ondragstart="inicioTraslado(event)" ondragover="finalTraslado(event)" src="./assets/imagenes/Rompe1.png" alt="Pieza 1 rompecabezas">
         <img id="img2" src="./assets/imagenes/Rompe3.png" alt="Pieza 3 rompecabezas">
         <img id="img3" src="./assets/imagenes/rompe2.png" alt="Pieza 2 rompecabezas">
     </div>
