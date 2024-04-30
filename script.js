@@ -52,7 +52,7 @@ function prevenirDefault(evento){
     evento.preventDefault();
 };
 
-let botonReiniciar = document.getElementById('botonReiniciar');
+const botonReiniciar = document.getElementById('botonReiniciar');
 
 botonReiniciar.addEventListener('click', reiniciarRompecabezas);
 
