@@ -11,8 +11,8 @@
 </head>
 <body>
     <nav>
-        <a href="./historia.html">HISTORIA</a>
-         <a href="./juguemos.html">JUGUEMOS</a>
+        <a class="nav" href="./historia.html">HISTORIA</a>
+         <a class="nav" href="./juguemos.html">JUGUEMOS</a>
     </nav>
     <main>
         <h2>JUGUEMOS UN POCO</h2> 
@@ -21,15 +21,16 @@
         <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
     <div id="tarjetasGrises">
         <div id="tarjeta" class="tarjeta" ondragover="event.preventDefault()" ondrop="soltarElemento(event)"><p>Arrastre y suelte la imagen aquí</p></div>
-        <div id="tarjeta" ><p>Arrastre y suelte la imagen aquí</p></div>
-        <div id="tarjeta" ><p>Arrastre y suelte la imagen aquí</p></div>
+        <div id="tarjeta" class="tarjeta" ondragover="event.preventDefault()" ondrop="soltarElemento(event)"><p>Arrastre y suelte la imagen aquí</p></div>
+        <div id="tarjeta" class="tarjeta" ondragover="event.preventDefault()" ondrop="soltarElemento(event)"><p>Arrastre y suelte la imagen aquí</p></div>
+    </div>
     </div>
     <div id="imagenes">
-        <img id="img1" src="./assets/imagenes/Rompe1.png" draggable="true" ondragstart="inicioTraslado(event)" ondragend="finalTraslado(event)" alt="Pieza 1 rompecabezas">
-        <img id="img2" src="./assets/imagenes/Rompe3.png" alt="Pieza 3 rompecabezas">
-        <img id="img3" src="./assets/imagenes/rompe2.png" alt="Pieza 2 rompecabezas">
+        <img  class="imagen" src="./assets/imagenes/Rompe1.png" draggable="true" ondragstart="inicioTraslado(event)" ondragend="finalTraslado(event)" alt="Pieza 1 rompecabezas">
+        <img  class="imagen" src="./assets/imagenes/Rompe3.png" draggable="true" ondragstart="inicioTraslado(event)" ondragend="finalTraslado(event)"alt="Pieza 3 rompecabezas">
+        <img  class="imagen" src="./assets/imagenes/rompe2.png" draggable="true" ondragstart="inicioTraslado(event)" ondragend="finalTraslado(event)"alt="Pieza 2 rompecabezas">
     </div>
-        <button id="reiniciar">Reiniciar</button>
+        <button id="botonReiniciar">Reiniciar</button>
     </section>
     <script src="./script.js"></script>
 </body>
